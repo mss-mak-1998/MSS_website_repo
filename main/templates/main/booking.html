@@ -1,0 +1,49 @@
+{% extends "main/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Booking Page{% endblock %}
+
+{% block content %}
+<br>
+<div class="min-h-screen flex items-center justify-center bg-white-100">
+    <form method="post" class="w-full max-w-2xl bg-white p-6 rounded-lg shadow-lg border border-gray-200 mb-30">
+        {% csrf_token %}
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Book A Free Consult</h2>
+
+        <div class="space-y-4">
+            <!-- Render each form field -->
+            {{ form.first_name.label_tag }}
+            {{ form.first_name }}
+
+            {{ form.last_name.label_tag }}
+            {{ form.last_name }}
+
+            {{ form.email.label_tag }}
+            {{ form.email }}
+
+            {{ form.contact_number.label_tag }}
+            {{ form.contact_number }}
+
+            {{ form.description.label_tag }}
+            {{ form.description }}
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="h-32 bg-gray-200 p-4 mt-6 rounded-lg">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v4a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-4z"></path>
+                    <path d="M12 11V7a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v4"></path>
+                </svg>
+                <span class="text-gray-800">Contact us at: makgothisoftwaresolutions@gmail.com</span>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full mt-6 bg-blue-500 text-white py-3 rounded-lg shadow hover:bg-blue-600 transition duration-200">
+            Submit
+        </button>
+    </form>
+    <br>
+</div>
+{% endblock %}

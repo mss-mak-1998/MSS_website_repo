@@ -1,0 +1,65 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+
+<!-- Founder Section -->
+<section class="text-gray-700 body-font  border border-red-300 h-300">
+    <div class="container mx-auto px-5 py-24">
+        <div class="flex flex-wrap lg:flex-nowrap items-center">
+            <!-- Left Column: Founder Image -->
+            <div class="lg:w-1/2 w-full mb-8 lg:mb-0">
+                <img class="rounded-lg shadow-lg max-w-full lg:max-w-lg w-full" 
+                     alt="Our Founder" 
+                     src="{% static 'images/pp_1.jpg' %}">
+            </div>
+            <!-- Right Column: Founder Text -->
+            <div class="lg:w-1/2 w-full flex flex-col justify-center text-center lg:text-left">
+                <h2 class="text-4xl font-bold text-gray-900">Meet Our Founder</h2>
+                <p class="mt-4 text-2xl text-gray-600 leading-relaxed">
+                    Our founder, Mr. Gopolang Sydney Makgothi, is currently pursuing his Honours degree in BSc Aerospace Engineering, with a strong focus on Applied Aerodynamics and Machine Learning. 
+                    He is an experienced tutor who has been working at <a href = 'https://www.teachme2.com/tutors/gopolang-27731' class = 'text-green-400'>TeachMe2</a>. Having taught: Mechanics of materials, software development, and thermofluids to name a few.<br/><br/> 
+                    He holds an impressive array of certifications, including expertise in CAD (SolidWorks), Responsive Front-End Design,Python, MATLAB and C++, and Applied Mathematics from Harvard. He is a full-stack developer
+                    with a highly analytical mind and a sharp eye for detail, he single-handedly developed this site, showcasing his dedication and technical prowess. 
+                    His passion for innovation and precision drives the success of every project he undertakes.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-5 text-center">
+        <h2 class="text-4xl font-bold text-gray-900">Our Mission</h2>
+        <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-600 leading-relaxed">
+            We aim to revolutionize industry standards through a combination of technological expertise and creative vision, delivering results that not only meet but exceed client expectations.
+        </p>
+    </div>
+</section>
+
+<!-- Co-founder Section -->
+<section class="text-gray-700 body-font  border border-red-300 h-300">
+    <div class="container mx-auto px-5 py-24">
+        <div class="flex flex-wrap lg:flex-nowrap items-center">
+            <!-- Left Column: Founder Image -->
+            <div class="lg:w-1/2 w-full mb-8 lg:mb-0">
+                <img class="rounded-lg shadow-lg max-w-full lg:max-w-lg w-full" 
+                     alt="Our Founder" 
+                     src="{% static 'images/thabo_mugg_shot_2.jpg' %}">
+            </div>
+            <!-- Right Column: Founder Text -->
+            <div class="lg:w-1/2 w-full flex flex-col justify-center text-center lg:text-left">
+                <h2 class="text-4xl font-bold text-gray-900">Meet Our Head of Social Media</h2>
+                <p class="mt-4 text-2xl text-gray-600 leading-relaxed">
+                    Our head of digital marketing and SMM(Social Media management), Ms Thabo Boitumelo Mohlaoli, is currently doing her final year in Psychology degree at Stellenbosch University, having previously studied General BA at Wits. With an analytical mindset and a sharp eye for detail, she brings a unique blend of creativity and strategic thinking to every project.<br/><br/> 
+                    Her expertise in social media management has been a game-changer for brands, including Tumelo Cosmetics, where she successfully revitalized the company’s presence—transforming it from a standstill to a thriving business within just a few months. 
+                    Her passion for growth and innovation continues to drive our success
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
